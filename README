@@ -46,6 +46,17 @@ in a file. The file must have one password per line.
 
 The program requires the OpenSSL libraries.
 
+### Setting up dependencies on macOS
+
+After installing [homebrew](https://brew.sh/), these steps need to be run before compling the sources.
+
+```sh
+brew install automake
+brew install openssl
+export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
+```
+
 
 ## Compilation
 
